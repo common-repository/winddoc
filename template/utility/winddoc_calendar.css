@@ -1,0 +1,151 @@
+#book_periodo{
+    max-width: 100%;
+}
+.datepicker-inline{
+    width: 100% !important;
+}
+.datepicker-days{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 0 1px #eaeaea inset, 0 2px 8px 0 rgb(135 162 164 / 48%) !important;
+    max-width: 350px;
+    width: 100%;
+    padding: 13px;
+}
+.datepicker table{
+    width: 100%;
+}
+.day{
+    font-weight: bold;
+}
+.day.disabled{
+   
+    opacity: 0.5;
+    font-weight: normal;
+    text-decoration:line-through;
+  
+}
+.woocommerce-page table tr:nth-child(odd) td.day.libero{
+    /*background-color: green !important;*/
+}
+.datepicker table tr td.active.active{
+    background-color: #286090 !important;   
+}
+
+
+.lds-dual-ring {
+    display: inline-block;
+ 
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 100px;
+   
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#winddoc-calendar{
+    position: relative;
+    height: fit-content;
+
+}
+
+
+
+.loading{
+    position: absolute;
+    width: 308px;    
+    height: 100%;
+    top:0;
+
+    background: #000;
+    opacity: 0.3;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+
+#sandbox-container .ui-widget-header{
+    background: none;
+    border: 0;
+}
+
+
+#sandbox-container .ui-state-disabled, 
+#sandbox-container .ui-widget-content .ui-state-disabled, 
+#sandbox-container .ui-widget-header .ui-state-disabled{
+
+}
+
+
+#sandbox-container .ui-state-default, 
+#sandbox-container .ui-widget-content .ui-state-default, 
+#sandbox-container .ui-widget-header .ui-state-default, 
+#sandbox-container .ui-button, 
+html #sandbox-container .ui-button.ui-state-disabled:hover, 
+html #sandbox-container .ui-button.ui-state-disabled:active{
+    border: 0;
+    margin: 1px;
+    background: none;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+#sandbox-container .ui-state-hover{
+    text-decoration: underline;
+}
+#sandbox-container .ui-state-disabled .ui-state-default{
+    font-weight: normal;
+}
+#sandbox-container .ui-state-default{
+    font-weight: bold;
+}
+#sandbox-container .ui-state-active{
+    border-radius: 50%;
+    background-color: #284B72 !important;
+    color: white;
+}
+#lista_calentari,#lista_id_calendario_attivitacal{
+    display: inline-block;
+}
+#lista_calentari li a, #lista_id_calendario_attivitacal li a{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 7px 30px;
+    border: 1px solid var(--wp--preset--color--primary);
+    display: inline-block;
+    margin: 5px 0;
+    text-align: center;
+}
+#lista_calentari .active,#lista_id_calendario_attivitacal .active{
+    font-weight: bold;
+    background-color: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--background);
+}
+
+#lista_calentari,#lista_id_calendario_attivitacal{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
